@@ -1,5 +1,4 @@
 = Lab | SQL Queries 6
-Jorge Castro -  Data Amalysis NOV2021
 :toc:
 :toc-title: Lab Content
 :toc-placement!:
