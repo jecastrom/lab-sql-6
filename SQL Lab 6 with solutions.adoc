@@ -144,11 +144,4 @@ CAUTION: Don't forget to add the `...-caption` document attributes in the header
  
 WARNING: You have no reason not to use Asciidoctor.
 
-[.result]
-====
-- [*] checked
-- [x] also checked
-- [ ] not checked
--     normal list item
-====
 
