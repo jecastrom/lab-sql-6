@@ -102,6 +102,7 @@ image::https://user-images.githubusercontent.com/63274055/147602670-02854a8a-38d
 ```sql
 SET
   GLOBAL local_infile = 1;
+SHOW VARIABLES LIKE 'local_infile';
 ```
 image::https://user-images.githubusercontent.com/63274055/147602872-1cf71bbd-b083-48f0-999b-1bd0e16518ca.png[width=600]
 === Finding the MySQL secure upload folder:
