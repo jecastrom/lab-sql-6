@@ -149,7 +149,7 @@ image::https://user-images.githubusercontent.com/63274055/147603159-4d6fd3ec-f18
 
 
 
-files_for_lab/SQL Lab 6 script only.sql[SQL Lab 6 script only]
+https://github.com/jecastrom/lab-sql-6/blob/5df0b6d4f9e795dab7e07bfcb0eb6443c88998bd/files_for_lab/SQL%20Lab%206%20script%20only.sql[SQL Lab 6 script only]
 
 
 
