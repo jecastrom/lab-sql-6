@@ -148,23 +148,8 @@ image::https://user-images.githubusercontent.com/63274055/147603159-4d6fd3ec-f18
 
 
 
-https://github.com/stars/jecastrom/lists/sql-ironhack-labs[SQL Lab 6 script only]
+files_for_lab/SQL Lab 6 script only.sql[SQL Lab 6 script only]
 
-********************
-[NOTE]
-====
-A sample note admonition.
-We can use gemoji icons in the Asciidoctor markup.
-We assign an icon name to the document
-attributes `tip-caption`, `note-caption` and `important-caption`.
-====
- 
-TIP: It works!
- 
-IMPORTANT: Asciidoctor is awesome, don't forget!
- 
-CAUTION: Don't forget to add the `...-caption` document attributes in the header of the document on GitHub.
- 
-WARNING: You have no reason not to use Asciidoctor.
+
 
 
