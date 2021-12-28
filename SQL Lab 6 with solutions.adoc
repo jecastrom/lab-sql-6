@@ -64,4 +64,6 @@ set global local_infile = 1;
 
 - If bulk import gives an unexpected error, you can also use the `data_import_wizard` to insert data into the new table.
 
+https://github.com/stars/jecastrom/lists/sql-ironhack-labs[SQL Lab 6 script only]
+
 
