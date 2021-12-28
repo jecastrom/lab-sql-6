@@ -69,3 +69,7 @@ set global local_infile = 1;
 https://github.com/stars/jecastrom/lists/sql-ironhack-labs[SQL Lab 6 script only]
 
 
+
+
+
+
