@@ -23,7 +23,7 @@ image::https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a
 
 
 
-# Lab | SQL Queries 6
+# Lab | Description:
 
 In this activity we are going to do some database maintenance. In the current database we only have information on movies for the year 2006. Now we have received the film catalog for 2020 as well. For this new data we will create another table and bulk insert all the data there. Code to create a new table has been provided below.
 
