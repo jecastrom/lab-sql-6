@@ -42,3 +42,14 @@ SET
   rental_duration = (3),
   rental_rate = (2.99),
   replacement_cost = (8.99);
+/*
+ Checking that the data was updated:
+ */
+SELECT
+  rental_duration,
+  rental_rate,
+  replacement_cost
+FROM
+  films_2020
+LIMIT
+  5;
