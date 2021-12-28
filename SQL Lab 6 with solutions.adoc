@@ -1,3 +1,4 @@
+= GitHub Flavored Asciidoc (GFA)
 ifdef::env-github[]
 :imagesdir:
  https://gist.githubusercontent.com/path/to/gist/revision/dir/with/all/images
