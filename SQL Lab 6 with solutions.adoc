@@ -118,7 +118,7 @@ image::https://user-images.githubusercontent.com/63274055/147602971-9e508b86-686
 LOAD data INFILE '/ProgramData/MySQL/MySQL Server 8.0/Uploads/films_2020.csv' INTO TABLE films_2020 FIELDS TERMINATED by ',' LINES TERMINATED by '\n' IGNORE 1 LINES;
 ```
 
-image::https://user-images.githubusercontent.com/63274055/147603043-22295932-0979-483e-91d2-d8b28c0794e3.png[]
+image::https://user-images.githubusercontent.com/63274055/147603043-22295932-0979-483e-91d2-d8b28c0794e3.png[width=600]
 
 === Update information on `rental_duration`, `rental_rate`, and `replacement_cost`
 
@@ -143,7 +143,7 @@ FROM
 LIMIT
   5;
 ```
-image::https://user-images.githubusercontent.com/63274055/147603159-4d6fd3ec-f18c-4896-9c2a-a2c2598ecf0f.png[]
+image::https://user-images.githubusercontent.com/63274055/147603159-4d6fd3ec-f18c-4896-9c2a-a2c2598ecf0f.png[width=600]
 
 
 
