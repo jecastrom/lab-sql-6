@@ -1,4 +1,4 @@
-= GitHub Flavored Asciidoc (GFA)
+= Lab | SQL Queries 6
 ifdef::env-github[]
 :imagesdir:
  https://gist.githubusercontent.com/path/to/gist/revision/dir/with/all/images
