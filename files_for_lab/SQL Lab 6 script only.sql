@@ -8,5 +8,5 @@ into table film
 fields terminated by ','
 lines terminated by '\n'
 ignore 1 lines
-(film_id,title,`description`,release_year,language_id,original_language_id,rental_duration,rental_rate,length,replacement_cost,rating)
+(film_id,title,`description`,release_year,language_id,original_language_id,rental_duration,rental_rate,length,replacement_cost,rating);
 
