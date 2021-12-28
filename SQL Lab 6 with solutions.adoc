@@ -51,7 +51,7 @@ We have just one item for each film, and all will be placed in the new table. Fo
 - Add the new films to the database.
 - Update information on `rental_duration`, `rental_rate`, and `replacement_cost`.
 
-## Hint
+### Hint
 
 - You might have to use the following commands to set bulk import option to `ON`:
 
