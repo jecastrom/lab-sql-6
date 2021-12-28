@@ -24,7 +24,7 @@ image::https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a
 
 toc::[]
 
-== Lab | Description:
+= Lab | Description:
 
 In this activity we are going to do some database maintenance. In the current database we only have information on movies for the year 2006. Now we have received the film catalog for 2020 as well. For this new data we will create another table and bulk insert all the data there. Code to create a new table has been provided below.
 
@@ -53,8 +53,7 @@ We have just one item for each film, and all will be placed in the new table. Fo
 == Instructions
 
 - Add the new films to the database.
-- Update information on `rental_duration`, `rental_rate`, and `replacement_cost`.
-
+- Update information on rental_duration, rental_rate, and replacement_cost.
 == Hint
 
 - You might have to use the following commands to set bulk import option to `ON`:
@@ -65,6 +64,66 @@ set global local_infile = 1;
 ```
 
 - If bulk import gives an unexpected error, you can also use the `data_import_wizard` to insert data into the new table.
+
+
+
+== Answer:
+=== Cleaning the Data:
+[.Data cleaning]
+====
+- [*] Verified Data Types: Checked the data types on the new table and on the data we have to load, to make sure they are compatible. I changed the data type of the "rating" colums from ENUM to VARCHAR(10) as there was an issue with a value being larger than the allowed by the ENUM type.
+
+- [x] Dealing with NULL and empty fields: Replaced all the NULLS and empty fields by an "\N" which MySQL reads as NULL.
+
+====
+=== Creating the new `films_2020` table:
+
+```sql
+DROP TABLE IF EXISTS films_2020;
+CREATE TABLE `films_2020` (
+  `film_id` smallint(5) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) NOT NULL,
+  `description` text,
+  `release_year` year(4) DEFAULT NULL,
+  `language_id` tinyint(3) UNSIGNED NOT NULL,
+  `original_language_id` tinyint(3) UNSIGNED DEFAULT NULL,
+  `rental_duration` int(6),
+  `rental_rate` decimal(4, 2),
+  `length` smallint(5) UNSIGNED DEFAULT NULL,
+  `replacement_cost` decimal(5, 2) DEFAULT NULL,
+  `rating` varchar(10) DEFAULT NULL,
+  PRIMARY KEY (`film_id`),
+  CONSTRAINT FOREIGN KEY (`original_language_id`) REFERENCES `language` (`language_id`) ON DELETE RESTRICT ON UPDATE CASCADE
+) ENGINE = InnoDB AUTO_INCREMENT = 1003 DEFAULT CHARSET = utf8;
+SHOW VARIABLES LIKE 'local_infile';
+```
+=== Setting the bulk import option to ON:
+```sql
+SET
+  GLOBAL local_infile = 1;
+```
+=== Finding the MySQL secure upload folder:
+```sql
+SHOW VARIABLES
+WHERE
+  variable_name = 'secure_file_priv';
+```
+===  Loading the data:
+```sql
+LOAD data INFILE '/ProgramData/MySQL/MySQL Server 8.0/Uploads/films_2020.csv' INTO TABLE films_2020 FIELDS TERMINATED by ',' LINES TERMINATED by '\n' IGNORE 1 LINES;
+```
+
+=== Update information on `rental_duration`, `rental_rate`, and `replacement_cost`
+
+```sql
+UPDATE
+  films_2020
+SET
+  rental_duration = (3),
+  rental_rate = (2.99),
+  replacement_cost = (8.99);
+```
+
 
 https://github.com/stars/jecastrom/lists/sql-ironhack-labs[SQL Lab 6 script only]
 
