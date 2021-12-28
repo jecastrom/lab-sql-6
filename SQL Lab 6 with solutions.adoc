@@ -103,7 +103,7 @@ image::https://user-images.githubusercontent.com/63274055/147602670-02854a8a-38d
 SET
   GLOBAL local_infile = 1;
 ```
-image::https://user-images.githubusercontent.com/63274055/147602872-1cf71bbd-b083-48f0-999b-1bd0e16518ca.png[]
+image::https://user-images.githubusercontent.com/63274055/147602872-1cf71bbd-b083-48f0-999b-1bd0e16518ca.png[width=600]
 === Finding the MySQL secure upload folder:
 
 ```sql
@@ -111,7 +111,7 @@ SHOW VARIABLES
 WHERE
   variable_name = 'secure_file_priv';
 ```
-image::https://user-images.githubusercontent.com/63274055/147602971-9e508b86-6868-4eee-945a-bbd1c952b269.png[]
+image::https://user-images.githubusercontent.com/63274055/147602971-9e508b86-6868-4eee-945a-bbd1c952b269.png[width=600]
 
 ===  Loading the data:
 ```sql
