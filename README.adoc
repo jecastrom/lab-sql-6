@@ -98,6 +98,10 @@ CREATE TABLE `films_2020` (
 SHOW VARIABLES LIKE 'local_infile';
 ```
 image::https://user-images.githubusercontent.com/63274055/147602670-02854a8a-38dd-46fb-98fe-b470bfd69fbe.png[width=600]
+
+====
+''''
+====
 === Setting the bulk import option to ON:
 ```sql
 SET
