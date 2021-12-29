@@ -15,7 +15,8 @@ CREATE TABLE `films_2020` (
   `replacement_cost` decimal(5, 2) DEFAULT NULL,
   `rating` varchar(10) DEFAULT NULL,
   PRIMARY KEY (`film_id`),
-  CONSTRAINT FOREIGN KEY (`original_language_id`) REFERENCES `language` (`language_id`) ON DELETE RESTRICT ON UPDATE CASCADE
+  CONSTRAINT FOREIGN KEY (`original_language_id`) REFERENCES `language` (`language_id`) 
+  ON DELETE RESTRICT ON UPDATE CASCADE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1003 DEFAULT CHARSET = utf8;
 SHOW VARIABLES LIKE 'local_infile';
 /*
@@ -33,7 +34,11 @@ WHERE
 /*
  Loading the data:
  */
-LOAD data INFILE '/ProgramData/MySQL/MySQL Server 8.0/Uploads/films_2020.csv' INTO TABLE films_2020 FIELDS TERMINATED by ',' LINES TERMINATED by '\n' IGNORE 1 LINES;
+  LOAD data INFILE '/ProgramData/MySQL/MySQL Server 8.0/Uploads/films_2020.csv' 
+  INTO TABLE films_2020 FIELDS TERMINATED by ',' 
+  LINES TERMINATED by '\n' 
+  IGNORE 1 LINES;
+  
 /*
  Update information on `rental_duration`, `rental_rate`, and `replacement_cost`
  */
@@ -54,3 +59,6 @@ FROM
   films_2020
 LIMIT
   5;
+  
+  
+  

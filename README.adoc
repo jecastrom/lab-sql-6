@@ -115,8 +115,12 @@ WHERE
 image::https://user-images.githubusercontent.com/63274055/147602971-9e508b86-6868-4eee-945a-bbd1c952b269.png[width=600]
 
 ===  Loading the data:
+
 ```sql
-LOAD data INFILE '/ProgramData/MySQL/MySQL Server 8.0/Uploads/films_2020.csv' INTO TABLE films_2020 FIELDS TERMINATED by ',' LINES TERMINATED by '\n' IGNORE 1 LINES;
+LOAD data INFILE '/ProgramData/MySQL/MySQL Server 8.0/Uploads/films_2020.csv' 
+INTO TABLE films_2020 FIELDS TERMINATED by ',' 
+LINES TERMINATED by '\n' 
+IGNORE 1 LINES;
 ```
 
 image::https://user-images.githubusercontent.com/63274055/147603043-22295932-0979-483e-91d2-d8b28c0794e3.png[width=600]
