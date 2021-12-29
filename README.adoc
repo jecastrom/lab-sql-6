@@ -99,7 +99,7 @@ SHOW VARIABLES LIKE 'local_infile';
 ```
 image::https://user-images.githubusercontent.com/63274055/147602670-02854a8a-38dd-46fb-98fe-b470bfd69fbe.png[width=600]
 === Setting the bulk import option to ON:
-```python
+```sql
 SET
   GLOBAL local_infile = 1;
 SHOW VARIABLES LIKE 'local_infile';
@@ -115,7 +115,7 @@ WHERE
 image::https://user-images.githubusercontent.com/63274055/147602971-9e508b86-6868-4eee-945a-bbd1c952b269.png[width=600]
 
 ===  Loading the data:
-```sql
+```python
 
 LOAD data INFILE '/ProgramData/MySQL/MySQL Server 8.0/Uploads/films_2020.csv' 
 INTO TABLE films_2020 FIELDS TERMINATED by ',' 
